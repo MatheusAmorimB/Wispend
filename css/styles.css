@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: 'SFProDisplay';
     src: url('../fonts/SFProDisplay.otf/SFPRODISPLAYREGULAR.OTF') format('opentype');
@@ -55,4 +56,50 @@ span {
 .error {
   color: red;
   display: block;
+=======
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url('../fonts/SFProDisplay.otf/SFPRODISPLAYREGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+.bg-custom {
+    background-color: #06192D;
+  }
+  
+.text-custom {
+    color: #06192D;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family:'SFProDisplay', sans-serif;;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.ms-6 {
+  margin-left: 65px;
+}
+
+.ms-9 {
+  margin-left: 118px;
+>>>>>>> cc187ce186ccaea43b19eb6fa992bf37b7fbaf6c
 }
