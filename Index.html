@@ -10,23 +10,30 @@
 </head>
 <body class="bg-custom d-flex">
     <div class="login-container text-white align-items-center">
-        <div class="d-flex justify-content-center mt-4">
+        <header class="d-flex justify-content-center mt-4">
             <img class="logo" src="./src/Logo_Wispend.png" alt="Logo_Wispend">
-        </div>
-        <div class="mt-5">
-            <label for="input_email" class="form-label fs-5">Email ou CPF</label>
-            <input type="email" class="form-control" id="input_email" placeholder="">
-        </div>
-        <div class="mt-4 mb-2">
-            <label for="input_senha" class="form-label fs-5">Senha</label>
-            <input type="password" class="form-control" id="input_senha" placeholder="">
-            <h2 class="fs-6 text-end mt-3">Esqueceu a senha ? 
-                <a href="#">Clique aqui</a>
-            </h2>
-        </div>
-        <div class="text-center">
-            <button type="submit" class="btn btn-lg btn-primary mt-3" style="border-radius: 20px; width: 200px;">Acessar conta</button>
-        </div>
+        </header>
+
+        <form id="form">
+            <div class="mt-5 form-group">
+                <label for="email" class="form-label fs-5">Email ou CPF</label>
+                <input type="email" class="form-control" id="email" placeholder="">
+
+                <span class="error-message">Mensagem de erro</span>
+            </div>
+            <div class="mt-2 form-group">
+                <label for="password" class="form-label fs-5">Senha</label>
+                <input type="password" class="form-control" id="password" placeholder="">
+                <span class="error-message">Mensagem de erro</span>
+                
+                <h2 class="fs-6 mt-2 text-end">Esqueceu a senha ? 
+                    <a href="#">Clique aqui</a>
+                </h2>
+            </div>
+            <div class="text-center">
+                <button type="submit" id="button-submit" class="btn btn-lg btn-primary mt-3" style="border-radius: 20px; width: 200px;">Acessar conta</button>
+            </div>
+        </form>
 
         <div class="d-flex align-items-center mt-3 ms-4" style="width: 300px;">
             <hr class="flex-grow-1"/>
@@ -41,12 +48,13 @@
 
         <div class="d-flex justify-content-center mt-4">
             <h1 class="fs-6">Ainda não possui um cadastro ?
-                <a href="#">Clique aqui</a>
+                <a href="./Cadastro.html">Clique aqui</a>
             </h1>
         </div>
     </div>
 
     
     <script src="js/bootstrap.esm.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
