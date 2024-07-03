@@ -38,27 +38,22 @@ window.onload = function() {
                 }
             }
 
-            const response = await fetch("https://wispend.vercel.app/Dashboard.html", {
+            await fetch('https://jsonplaceholder.typicode.com/posts', {
                 method: 'POST',
+                headers:{
+                    "Content-Type": "application/json"
+                },
                 body: JSON.stringify({
                     email: email.value.trim(),
                     password: password.value.trim()
-                }),
-                headers:{
-                    "Content-Type": "application/json"
-                }
-            });
-
-            if(!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.message);
-            }
-
-            const data = await response.json();
-            
-            alert("Login realizado com sucesso!");
-
-            window.location.href = "Dashboard.html";
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Sucesso', data);
+                alert("Login realizado com sucesso!");
+                window.location.href = "Dashboard.html";
+            })
 
         } catch (error) {
             alert(error.message)
