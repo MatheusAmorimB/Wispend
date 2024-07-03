@@ -2,14 +2,14 @@
     "redirects": [
         {
             "source": "/",
-            "destination": "/Index.html",
+            "destination": "/index.html",
             "permanent": true
         }
     ],
     "rewrites" : [
         {
             "source": "/", 
-        "destination": "/Index.html"
+        "destination": "/index.html"
         }
     ]
 }
