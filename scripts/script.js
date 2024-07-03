@@ -34,7 +34,7 @@ window.onload = function() {
                 if(password.value.trim() === "") {
                     setError(password, "A área de senha não pode está vazia!")
 
-                    throw new Error("A senha é obrigatório") 
+                    throw new Error("A senha é obrigatória") 
                 }
             }
 
