@@ -3,6 +3,14 @@
         {
             "source": "/", 
             "destination": "/index.html"
+        },
+        {
+            "source": "/dashboard",
+            "destination": "/dashboard.html"
+        },
+        {
+            "source": "/cadastro",
+            "destination": "/cadastro.html"
         }
     ]
 }
