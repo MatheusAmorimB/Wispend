@@ -19,15 +19,6 @@ span {
     background-color: #06192D;
   }
   
-.text-custom {
-    color: #06192D;
-  }
-
-
-.full-height {
-    height: 100vh;
-}
-
 .login-container {
     max-width: 400px;
     width: 100%;
@@ -48,6 +39,10 @@ span {
   margin-left: 118px;
 }
 
+.mb-6 {
+  margin-bottom: 2rem;
+}
+
 .error-message {
   display: none;
 }
@@ -55,4 +50,18 @@ span {
 .error {
   color: red;
   display: block;
+}
+
+.form-label {
+  margin-bottom: 0;
+}
+
+.form-data {
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn {
+  align-items: center;
 }
