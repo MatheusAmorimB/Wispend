@@ -52,7 +52,7 @@ window.onload = function() {
             .then(data => {
                 console.log('Sucesso', data);
                 alert("Login realizado com sucesso!");
-                window.location.href = "dashboard.html";
+                window.location.href = "/Pages/dashboard.html";
             })
 
         } catch (error) {
